@@ -10,6 +10,8 @@ import UIKit
 
 class ViewController: UIViewController {
 
+// Prefab stuff above.
+    
     
     
     @IBOutlet weak var theLabel: UILabel!
@@ -20,9 +22,9 @@ class ViewController: UIViewController {
     
     
     @IBAction func buttonTapped(_ sender: Any) {
-        
-        theLabel.text = "Answer is \(Double(FieldOne.text!)! + Double(FieldTwo.text!)!)"
-        
+        theLabel.text = "Answer: \(Double(FieldOne.text!)! + Double (FieldTwo.text!)!)"
+ 
+      
     }
     
     
