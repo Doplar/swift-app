@@ -10,20 +10,19 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    
+    
     @IBOutlet weak var theLabel: UILabel!
     
-    var tapCount = 0
+    @IBOutlet weak var FieldOne: UITextField!
+    
+    @IBOutlet weak var FieldTwo: UITextField!
     
     
     @IBAction func buttonTapped(_ sender: Any) {
         
-        tapCount = tapCount + 1
+        theLabel.text = "Answer is \(Double(FieldOne.text!)! + Double(FieldTwo.text!)!)"
         
-        if tapCount >= 10 {
-            theLabel.text = ("You Tapped OUT !!")
-            
-        }
-        print(tapCount)
     }
     
     
@@ -32,12 +31,13 @@ class ViewController: UIViewController {
     }
     
     
+    
+    
+// PreFAB stuff =====
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
     }
-
-    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.

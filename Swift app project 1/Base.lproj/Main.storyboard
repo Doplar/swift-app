@@ -28,30 +28,55 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EUz-nn-01C">
-                                <rect key="frame" x="159.5" y="100.5" width="56" height="30"/>
-                                <state key="normal" title="Counter"/>
+                                <rect key="frame" x="157.5" y="100.5" width="60" height="30"/>
+                                <state key="normal" title="Push Me"/>
                                 <connections>
                                     <action selector="buttonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ys3-TM-0ky"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fJR-TW-1mS">
-                                <rect key="frame" x="158" y="172" width="59" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button 2"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fJR-TW-1mS">
+                                <rect key="frame" x="166" y="172" width="43" height="30"/>
+                                <state key="normal" title="ONYD"/>
                                 <connections>
                                     <action selector="buttonTapped2:" destination="BYZ-38-t0r" eventType="touchUpInside" id="VkO-Ja-ocx"/>
                                 </connections>
                             </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="3Ia-yL-9Pb">
+                                <rect key="frame" x="137.5" y="240" width="100" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="Hy7-mm-4Cb"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="BTA-xx-GgX">
+                                <rect key="frame" x="137.5" y="309" width="100" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="fFI-gc-9ke"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="3Ia-yL-9Pb" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="6Bk-zh-tve"/>
+                            <constraint firstItem="BTA-xx-GgX" firstAttribute="top" secondItem="3Ia-yL-9Pb" secondAttribute="bottom" constant="39" id="7y4-jo-bLP"/>
                             <constraint firstItem="EUz-nn-01C" firstAttribute="top" secondItem="15v-1C-GLc" secondAttribute="bottom" constant="20" id="GyC-8G-Ebw"/>
                             <constraint firstItem="EUz-nn-01C" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="PFp-9w-R9S"/>
                             <constraint firstItem="15v-1C-GLc" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="40" id="QWQ-yA-zRw"/>
                             <constraint firstItem="15v-1C-GLc" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="UjQ-Hx-gQZ"/>
+                            <constraint firstItem="fJR-TW-1mS" firstAttribute="top" secondItem="EUz-nn-01C" secondAttribute="bottom" constant="41.5" id="ZVF-jf-AEv"/>
+                            <constraint firstItem="BTA-xx-GgX" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="hNx-c5-EeA"/>
+                            <constraint firstItem="3Ia-yL-9Pb" firstAttribute="top" secondItem="fJR-TW-1mS" secondAttribute="bottom" constant="38" id="w5M-c5-vWr"/>
+                            <constraint firstItem="fJR-TW-1mS" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="yDw-oG-ela"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="FieldOne" destination="3Ia-yL-9Pb" id="4J2-sc-fl9"/>
+                        <outlet property="FieldTwo" destination="BTA-xx-GgX" id="EvX-Da-kGd"/>
                         <outlet property="theLabel" destination="15v-1C-GLc" id="khu-iu-8PW"/>
                     </connections>
                 </viewController>
