@@ -22,7 +22,16 @@ class ViewController: UIViewController {
     
     
     @IBAction func buttonTapped(_ sender: Any) {
-        theLabel.text = "Answer: \(Double(FieldOne.text!)! + Double (FieldTwo.text!)!)"
+        
+        let addition = true
+        
+        if addition {
+            theLabel.text = "Answer: \(Double(FieldOne.text!)! + Double (FieldTwo.text!)!)"
+        } else {
+            theLabel.text = "Answer: \(Double(FieldOne.text!)! - Double (FieldTwo.text!)!)"
+        }
+        
+//        theLabel.text = "Answer: \(Double(FieldOne.text!)! + Double (FieldTwo.text!)!)"
  
       
     }
